@@ -21,7 +21,7 @@ def get_statement_dt(pdfText):
 		else:
 			return ''
 
-def write_to_file():
+def write_to_file(output):
 	# Create dataframe and output to Excel File
 	outputDF = pd.DataFrame(output, columns = ['FILENAME', 'PAGE_NUMBER', 'ACCT_ID', 'STATEMENT_DATE', 'TEXT'])
 	writer = pd.ExcelWriter('./output/output.xlsx')
